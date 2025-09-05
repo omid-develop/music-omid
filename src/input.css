@@ -1,0 +1,46 @@
+@import "tailwindcss";
+/* @config "../tailwind.config.js"; */
+
+body{
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+}
+
+
+@font-face {
+    font-family: 'Yekan';
+    src: url('../public/fonts/Yekan.eot') format('eot'),
+    url('../public/fonts/Yekan.woff') format('woff'),
+    url('../public/fonts/Yekan.ttf') format('ttf');
+}
+
+
+@font-face {
+    font-family: 'Sahel';
+    src: url('../public/fonts/Sahel-Bold.eot') format('eot'),
+    url('../public/fonts/Sahel-Bold.woff') format('woff'),
+    url('../public/fonts/Sahel-Bold.ttf') format('ttf');
+}
+
+
+@theme{
+      --width-120:1200px;
+      --font-yekan:Yekan;
+      --font-Sahel:Sahel;
+}
+
+
+.background-image{
+    background-image: url("../public/img/banner-music.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width:454px){
+    .background-image{
+        min-height: 100px;
+        background-size: 100%;
+    }
+}

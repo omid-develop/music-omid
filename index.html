@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music-omid</title>
+    <link rel="stylesheet" type="text/css" href="./src/output.css" />
+    <link rel="stylesheet" href="./public/fontawesome/css/all.css" />
+</head>
+
+<body>
+
+    <div class="w-full bg-orange-400 m-auto lg:block hidden fixed top-0 z-50">
+
+        <div class="w-120 bg-blue-700 m-auto flex justify-center pt-5 pb-5">
+
+            <div class="bg-red-600 w-[15%] text-2xl flex items-center">
+                <h1>Music Omid</h1>
+            </div>
+
+            <div class="bg-green-900 w-[57%] flex items-center lg:pr-7">
+
+                <ul class="flex gap-x-10 font-yekan">
+
+                    <li>
+                        <a href="#" class="bg-violet-600">صفحه اصلی</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="bg-violet-600">آهنگ ها</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="bg-violet-600">درباره ما</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="bg-violet-600">تماس با ما</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="bg-yellow-400 w-[28%] flex justify-end">
+                <div class="w-[85%] bg-white flex p-[3px]">
+
+                    <div class="w-[40px] h-[35px] flex justify-center items-center">
+                        <i class="fas fa-search" style="font-size: 20px;"></i>
+                    </div>
+
+                    <input type="text" value="" placeholder="جست وجو آهنگ"
+                        class="font-yekan w-full pr-2 border-none outline-none" />
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Responsive Header -->
+
+    <div class="w-full h-[60px] bg-pink-500 lg:hidden flex justify-between pr-8 pl-8 fixed top-0">
+
+        <div class="flex items-center bg-yellow-500">
+            <h1 class="text-2xl">Music Omid</h1>
+        </div>
+
+        <div class="flex items-center">
+            <i class="fas fa-bars" style="font-size: 35px;"></i>
+        </div>
+
+    </div>
+
+    <div class="w-[60%] h-full bg-orange-500 absolute top-0 hidden">
+
+        <div class="w-full bg-blue-900 m-auto flex items-center justify-end p-2 pl-4">
+            <i class="fas fa-window-close" style="font-size: 30px;"></i>
+        </div>
+
+        <div class="w-[90%] h-[2px] bg-green-600 m-auto"></div>
+
+        <div class="w-[90%] bg-violet-700 m-auto mt-7 font-yekan">
+
+            <ul class="grid gap-y-6">
+                <li>
+                    <a href="#">صفحه اصلی</a>
+                </li>
+                <li>
+                    <a href="#">آهنگ ها</a>
+                </li>
+                <li>
+                    <a href="#">درباره ما</a>
+                </li>
+                <li>
+                    <a href="#">تماس با ما</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Banner -->
+
+    <div class="w-full bg-lime-400 relative lg:top-[81px] top-[60px] -z-50">
+
+        <div
+            class="w-full lg:h-[500px] pt-4 pb-4 bg-red-600 m-auto background-image lg:flex hidden flex-col justify-center items-center">
+
+            <h1 class="text-3xl text-white font-Sahel">موسیقی</h1>
+            <h1 class="text-3xl text-white font-Sahel mt-4">برای همه لحظه ها</h1>
+            <p class="text-lg text-white font-yekan mt-5">جدیدترین آهنگ ها را همین الان گوش کنید</p>
+
+            <button class="w-32 h-12 bg-red-600 rounded-3xl font-yekan flex justify-center items-center mt-5">شروع
+                پخش</button>
+
+        </div>
+
+        <div class="w-full lg:hidden block">
+            <img src="./public/img/banner-music-mobile.png" alt="" width="1200" height="400" />
+        </div>
+
+    </div>
+
+
+    <!-- categories -->
+
+    <div class="w-full bg-orange-500 mt-36">
+
+        <div class="lg:w-120 w-full bg-blue-600 m-auto">
+
+            <div class="w-full bg-yellow-400 m-auto text-[22px] font-Sahel text-center">دسته بندی آهنگ ها</div>
+
+            <div class="w-full bg-yellow-400 m-auto mt-10 grid lg:grid-cols-4 grid-cols-2 lg:gap-20 gap-4 lg:p-0 p-2">
+
+                <a href="#">
+                    <div class="bg-sky-300 flex flex-col justify-center items-center pb-4 rounded-3xl">
+                    <img src="./public/img/pop.png" alt="" width="200" height="200"/>
+                    <p class="-mt-3 font-yekan text-base">موسیقی پاپ</p>
+                </div>
+                </a>
+
+                <a href="#">
+                    <div class="bg-sky-300 flex flex-col justify-center items-center pb-4 rounded-3xl">
+                    <img src="./public/img/rap.png" alt="" width="200" height="200"/>
+                    <p class="-mt-3 font-yekan text-base">موسیقی رپ</p>
+                </div>
+                </a>
+
+                <a href="#">
+                    <div class="bg-sky-300 flex flex-col justify-center items-center pb-4 rounded-3xl">
+                    <img src="./public/img/ghadimi.png" alt="" width="200" height="200"/>
+                    <p class="-mt-3 font-yekan text-base">موسیقی کلاسیک</p>
+                </div>
+                </a>
+
+                <a href="#">
+                    <div class="bg-sky-300 flex flex-col justify-center items-center pb-4 rounded-3xl">
+                    <img src="./public/img/sonati.png" alt="" width="200" height="200"/>
+                    <p class="-mt-3 font-yekan text-base">موسیقی سنتی</p>
+                </div>
+                </a>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="w-full bg-violet-900 h-[100px] mt-[200px]"></div>
+
+</body>
+
+</html>
