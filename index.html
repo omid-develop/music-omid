@@ -9,32 +9,36 @@
     <link rel="stylesheet" href="./public/fontawesome/css/all.css" />
 </head>
 
-<body>
+<body class="bg-black-1000">
 
-    <div class="w-full h-[80px] bg-orange-400 m-auto lg:block hidden fixed top-0 z-50">
 
-        <div class="w-120 h-full bg-blue-700 m-auto flex justify-center pt-5 pb-5">
+    <div class="motaherak"></div>
 
-            <div class="bg-red-600 text-2xl flex items-center">
+
+    <div class="w-full shadow-lg bg-black-1000 h-[80px] m-auto lg:block hidden fixed top-0 z-50">
+
+        <div class="w-120 h-full m-auto flex justify-center pt-5 pb-5">
+
+            <div class="text-2xl flex items-center">
                 <a href="index.html">
                     <img src="./public/img/logo.png" alt="" width="120" height="120" />
                 </a>
             </div>
 
-            <div class="bg-green-900 w-[57%] h-full flex items-center lg:pr-10">
+            <div class="w-[57%] h-full flex items-center lg:pr-10 text-white">
 
                 <ul class="flex gap-x-10 font-yekan">
 
                     <li>
-                        <a href="index.html" class="bg-violet-600">صفحه اصلی</a>
+                        <a href="index.html" class="hover:border-b-2 border-b-purple-600">صفحه اصلی</a>
                     </li>
 
                     <li>
-                        <a href="music.html" class="bg-violet-600">آهنگ ها</a>
+                        <a href="music.html" class="hover:border-b-2 border-b-purple-600">آهنگ ها</a>
                     </li>
 
                     <li>
-                        <a href="#categories" class="bg-violet-600">دسته بندی موسیقی</a>
+                        <a href="#categories" class="hover:border-b-2 border-b-purple-600">دسته بندی موسیقی</a>
                     </li>
 
 
@@ -42,15 +46,15 @@
 
             </div>
 
-            <div class="bg-yellow-400 w-[28%] flex justify-end">
-                <div class="w-[85%] bg-white flex p-[3px]">
+            <div class="w-[28%] flex justify-end">
+                <div class="w-[85%] bg-[#262648] flex p-[3px]">
 
                     <div class="w-[40px] h-[35px] flex justify-center items-center">
-                        <i class="fas fa-search" style="font-size: 20px;"></i>
+                        <i class="fas fa-search" style="font-size: 20px;color: white;"></i>
                     </div>
 
                     <input type="text" value="" placeholder="جست وجو آهنگ"
-                        class="font-yekan w-full pr-2 border-none outline-none" />
+                        class="font-yekan w-full pr-2 border-none outline-none text-white" />
 
                 </div>
             </div>
@@ -106,16 +110,16 @@
 
     <!-- Banner -->
 
-    <div class="w-full bg-lime-400 relative lg:top-[80px] top-[60px] -z-50">
+    <div class="w-full relative lg:top-[80px] top-[60px]">
 
         <div
-            class="w-full lg:h-[500px] pt-4 pb-4 bg-red-600 m-auto background-image lg:flex hidden flex-col justify-center items-center">
+            class="w-full lg:h-[500px] pt-4 pb-4 m-auto background-image lg:flex hidden flex-col justify-center items-center">
 
-            <h1 class="text-3xl text-white font-Sahel">موسیقی</h1>
-            <h1 class="text-3xl text-white font-Sahel mt-4">برای همه لحظه ها</h1>
-            <p class="text-lg text-white font-yekan mt-5">جدیدترین آهنگ ها را همین الان گوش کنید</p>
+            <h1 class="text-3xl text-white font-Sahel">پخش آنلاین آهنگ دو نفری</h1>
+            <p class="text-lg text-white font-yekan mt-5">خوننده : ستین</p>
 
-            <button class="w-32 h-12 bg-red-600 rounded-3xl font-yekan flex justify-center items-center mt-5">شروع
+            <button id="playBtn"
+                class="w-32 h-12 bg-purple-600 text-white rounded-3xl font-yekan flex justify-center items-center mt-5">شروع
                 پخش</button>
 
         </div>
@@ -129,39 +133,39 @@
 
     <!-- categories -->
 
-    <div class="w-full bg-orange-500 lg:mt-36 mt-28 scroll-mt-24" id="categories">
+    <div class="w-full lg:mt-36 mt-28 scroll-mt-24" id="categories">
 
-        <div class="lg:w-120 w-full bg-blue-600 m-auto">
+        <div class="lg:w-120 w-full m-auto">
 
-            <div class="w-full bg-yellow-400 m-auto text-[22px] font-Sahel text-center">دسته بندی آهنگ ها</div>
+            <div class="w-full m-auto text-[22px] font-Sahel text-center text-white">دسته بندی آهنگ ها</div>
 
-            <div class="w-full bg-yellow-400 m-auto mt-10 grid lg:grid-cols-4 grid-cols-2 lg:gap-20 gap-4 lg:p-0 p-2">
-
-                <a href="category-page.html">
-                    <div class="bg-sky-300 flex flex-col justify-center items-center pb-4 rounded-3xl">
-                        <img src="./public/img/pop.png" alt="" width="200" height="200" />
-                        <p class="-mt-3 font-yekan text-base">موسیقی پاپ</p>
-                    </div>
-                </a>
+            <div class="w-full m-auto mt-10 grid lg:grid-cols-4 grid-cols-2 lg:gap-20 gap-4 lg:p-0 p-2">
 
                 <a href="category-page.html">
-                    <div class="bg-sky-300 flex flex-col justify-center items-center pb-4 rounded-3xl">
-                        <img src="./public/img/rap.png" alt="" width="200" height="200" />
-                        <p class="-mt-3 font-yekan text-base">موسیقی رپ</p>
-                    </div>
-                </a>
-
-                <a href="category-page.html">
-                    <div class="bg-sky-300 flex flex-col justify-center items-center pb-4 rounded-3xl">
-                        <img src="./public/img/ghadimi.png" alt="" width="200" height="200" />
-                        <p class="-mt-3 font-yekan text-base">موسیقی کلاسیک</p>
-                    </div>
-                </a>
-
-                <a href="category-page.html">
-                    <div class="bg-sky-300 flex flex-col justify-center items-center pb-4 rounded-3xl">
+                    <div class="bg-primary flex flex-col justify-center items-center pb-4 rounded-3xl">
                         <img src="./public/img/sonati.png" alt="" width="200" height="200" />
-                        <p class="-mt-3 font-yekan text-base">موسیقی سنتی</p>
+                        <p class="-mt-3 font-yekan text-base text-white">موسیقی پاپ</p>
+                    </div>
+                </a>
+
+                <a href="category-page.html">
+                    <div class="bg-primary flex flex-col justify-center items-center pb-4 rounded-3xl">
+                        <img src="./public/img/ghadimi.png" alt="" width="200" height="200" />
+                        <p class="-mt-3 font-yekan text-base text-white">موسیقی پاپ</p>
+                    </div>
+                </a>
+
+                <a href="category-page.html">
+                    <div class="bg-primary flex flex-col justify-center items-center pb-4 rounded-3xl">
+                        <img src="./public/img/rap.png" alt="" width="200" height="200" />
+                        <p class="-mt-3 font-yekan text-base text-white">موسیقی پاپ</p>
+                    </div>
+                </a>
+
+                <a href="category-page.html">
+                    <div class="bg-primary flex flex-col justify-center items-center pb-4 rounded-3xl">
+                        <img src="./public/img/pop.png" alt="" width="200" height="200" />
+                        <p class="-mt-3 font-yekan text-base text-white">موسیقی پاپ</p>
                     </div>
                 </a>
 
@@ -176,81 +180,89 @@
 
     <!-- آهنگ های پیشنهادی -->
 
-    <div class="w-full bg-violet-500 lg:mt-16 mt-10">
+    <div class="w-full lg:mt-16 mt-10">
 
-        <div class="lg:w-120 w-full m-auto bg-yellow-800 lg:p-0 p-3">
+        <div class="lg:w-120 w-full m-auto lg:p-0 p-3">
 
-            <div class="w-full bg-sky-400 m-auto flex justify-between items-center">
+            <div class="w-full m-auto flex justify-between items-center">
 
-                <p class="lg:text-[22px] text-lg font-Sahel">آهنگ های پیشنهادی</p>
+                <p class="lg:text-[22px] text-lg font-Sahel text-white">آهنگ های پیشنهادی</p>
 
                 <div class="lg:block hidden">
-                    <i class="fas fa-chevron-right lg:w-[35px] p-3 bg-red-800 rounded-tr-3xl rounded-br-3xl"></i>
-                    <a href="#" class="pr-4 pl-4 pt-1 pb-1 lg:w-[100px] bg-blue-600 font-yekan">بیشتر</a>
-                    <i class="fas fa-chevron-left lg:w-[35px] p-3 bg-red-800 rounded-tl-3xl rounded-bl-3xl"></i>
+                    <i
+                        class="fas fa-chevron-right lg:w-[35px] p-3 bg-purple-500 text-white rounded-tr-3xl rounded-br-3xl"></i>
+                    <a href="#" class="pr-4 pl-4 pt-1 pb-1 lg:w-[100px] bg-[#202040] text-white font-yekan">بیشتر</a>
+                    <i
+                        class="fas fa-chevron-left lg:w-[35px] p-3 bg-purple-500 text-white rounded-tl-3xl rounded-bl-3xl"></i>
                 </div>
 
             </div>
 
 
-            <div class="w-full bg-yellow-950 m-auto mt-8 grid lg:grid-cols-6 grid-cols-2 gap-5">
+            <div class="w-full m-auto mt-8 grid lg:grid-cols-6 grid-cols-2 gap-5">
 
-                <div class="bg-blue-500 p-4 rounded-2xl">
+                <div class="bg-primary p-4 rounded-2xl text-white">
 
-                    <a href="#">
-                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-red-600 m-auto rounded-2xl"></div>
+                    <a href="play-song.html">
+                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-[#29294a] m-auto rounded-2xl">
+                        </div>
                         <p class="text-center mt-3 font-Sahel">سلام</p>
-                        <p class="text-center mt-3 font-Sahel">سوگند</p>
+                        <p class="text-center mt-3 font-Sahel text-secondary">سوگند</p>
                     </a>
 
                 </div>
 
-                <div class="bg-blue-500 p-4 rounded-2xl">
+                <div class="bg-primary p-4 rounded-2xl text-white">
 
-                    <a href="#">
-                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-red-600 m-auto rounded-2xl"></div>
+                    <a href="play-song.html">
+                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-[#29294a] m-auto rounded-2xl">
+                        </div>
                         <p class="text-center mt-3 font-Sahel">سلام</p>
-                        <p class="text-center mt-3 font-Sahel">سوگند</p>
+                        <p class="text-center mt-3 font-Sahel text-secondary">سوگند</p>
                     </a>
 
                 </div>
 
-                <div class="bg-blue-500 p-4 rounded-2xl">
+                <div class="bg-primary p-4 rounded-2xl text-white">
 
-                    <a href="#">
-                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-red-600 m-auto rounded-2xl"></div>
+                    <a href="play-song.html">
+                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-[#29294a] m-auto rounded-2xl">
+                        </div>
                         <p class="text-center mt-3 font-Sahel">سلام</p>
-                        <p class="text-center mt-3 font-Sahel">سوگند</p>
+                        <p class="text-center mt-3 font-Sahel text-secondary">سوگند</p>
                     </a>
 
                 </div>
 
-                <div class="bg-blue-500 p-4 rounded-2xl">
+                <div class="bg-primary p-4 rounded-2xl text-white">
 
-                    <a href="#">
-                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-red-600 m-auto rounded-2xl"></div>
+                    <a href="play-song.html">
+                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-[#29294a] m-auto rounded-2xl">
+                        </div>
                         <p class="text-center mt-3 font-Sahel">سلام</p>
-                        <p class="text-center mt-3 font-Sahel">سوگند</p>
+                        <p class="text-center mt-3 font-Sahel text-secondary">سوگند</p>
                     </a>
 
                 </div>
 
-                <div class="bg-blue-500 p-4 rounded-2xl">
+                <div class="bg-primary p-4 rounded-2xl text-white">
 
-                    <a href="#">
-                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-red-600 m-auto rounded-2xl"></div>
+                    <a href="play-song.html">
+                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-[#29294a] m-auto rounded-2xl">
+                        </div>
                         <p class="text-center mt-3 font-Sahel">سلام</p>
-                        <p class="text-center mt-3 font-Sahel">سوگند</p>
+                        <p class="text-center mt-3 font-Sahel text-secondary">سوگند</p>
                     </a>
 
                 </div>
 
-                <div class="bg-blue-500 p-4 rounded-2xl">
+                <div class="bg-primary p-4 rounded-2xl text-white">
 
-                    <a href="#">
-                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-red-600 m-auto rounded-2xl"></div>
+                    <a href="play-song.html">
+                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-[#29294a] m-auto rounded-2xl">
+                        </div>
                         <p class="text-center mt-3 font-Sahel">سلام</p>
-                        <p class="text-center mt-3 font-Sahel">سوگند</p>
+                        <p class="text-center mt-3 font-Sahel text-secondary">سوگند</p>
                     </a>
 
                 </div>
@@ -267,81 +279,89 @@
 
     <!-- آخرین آهنگ ها -->
 
-    <div class="w-full bg-violet-500 lg:mt-16 mt-10">
+    <div class="w-full lg:mt-16 mt-10">
 
-        <div class="lg:w-120 w-full m-auto bg-yellow-800 lg:p-0 p-3">
+        <div class="lg:w-120 w-full m-auto lg:p-0 p-3">
 
-            <div class="w-full bg-sky-400 m-auto flex justify-between items-center">
+            <div class="w-full m-auto flex justify-between items-center">
 
-                <p class="lg:text-[22px] text-lg font-Sahel">آخرین آهنگ ها</p>
+                <p class="lg:text-[22px] text-lg font-Sahel text-white">آخرین آهنگ ها</p>
 
                 <div class="lg:block hidden">
-                    <i class="fas fa-chevron-right lg:w-[35px] p-3 bg-red-800 rounded-tr-3xl rounded-br-3xl"></i>
-                    <a href="#" class="pr-4 pl-4 pt-1 pb-1 lg:w-[100px] bg-blue-600 font-yekan">بیشتر</a>
-                    <i class="fas fa-chevron-left lg:w-[35px] p-3 bg-red-800 rounded-tl-3xl rounded-bl-3xl"></i>
+                    <i
+                        class="fas fa-chevron-right lg:w-[35px] p-3 bg-purple-500 text-white rounded-tr-3xl rounded-br-3xl"></i>
+                    <a href="music.html" class="pr-4 pl-4 pt-1 pb-1 lg:w-[100px] bg-[#202040] text-white font-yekan">بیشتر</a>
+                    <i
+                        class="fas fa-chevron-left lg:w-[35px] p-3 bg-purple-500 text-white rounded-tl-3xl rounded-bl-3xl"></i>
                 </div>
 
             </div>
 
 
-            <div class="w-full bg-yellow-950 m-auto mt-8 grid lg:grid-cols-6 grid-cols-2 gap-5">
+            <div class="w-full m-auto mt-8 grid lg:grid-cols-6 grid-cols-2 gap-5">
 
-                <div class="bg-blue-500 p-4 rounded-2xl">
+                <div class="bg-primary p-4 rounded-2xl text-white">
 
-                    <a href="#">
-                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-red-600 m-auto rounded-2xl"></div>
+                    <a href="play-song.html">
+                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-[#29294a] m-auto rounded-2xl">
+                        </div>
                         <p class="text-center mt-3 font-Sahel">سلام</p>
-                        <p class="text-center mt-3 font-Sahel">سوگند</p>
+                        <p class="text-center mt-3 font-Sahel text-secondary">سوگند</p>
                     </a>
 
                 </div>
 
-                <div class="bg-blue-500 p-4 rounded-2xl">
+                <div class="bg-primary p-4 rounded-2xl text-white">
 
-                    <a href="#">
-                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-red-600 m-auto rounded-2xl"></div>
+                    <a href="play-song.html">
+                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-[#29294a] m-auto rounded-2xl">
+                        </div>
                         <p class="text-center mt-3 font-Sahel">سلام</p>
-                        <p class="text-center mt-3 font-Sahel">سوگند</p>
+                        <p class="text-center mt-3 font-Sahel text-secondary">سوگند</p>
                     </a>
 
                 </div>
 
-                <div class="bg-blue-500 p-4 rounded-2xl">
+                <div class="bg-primary p-4 rounded-2xl text-white">
 
-                    <a href="#">
-                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-red-600 m-auto rounded-2xl"></div>
+                    <a href="play-song.html">
+                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-[#29294a] m-auto rounded-2xl">
+                        </div>
                         <p class="text-center mt-3 font-Sahel">سلام</p>
-                        <p class="text-center mt-3 font-Sahel">سوگند</p>
+                        <p class="text-center mt-3 font-Sahel text-secondary">سوگند</p>
                     </a>
 
                 </div>
 
-                <div class="bg-blue-500 p-4 rounded-2xl">
+                <div class="bg-primary p-4 rounded-2xl text-white">
 
-                    <a href="#">
-                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-red-600 m-auto rounded-2xl"></div>
+                    <a href="play-song.html">
+                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-[#29294a] m-auto rounded-2xl">
+                        </div>
                         <p class="text-center mt-3 font-Sahel">سلام</p>
-                        <p class="text-center mt-3 font-Sahel">سوگند</p>
+                        <p class="text-center mt-3 font-Sahel text-secondary">سوگند</p>
                     </a>
 
                 </div>
 
-                <div class="bg-blue-500 p-4 rounded-2xl">
+                <div class="bg-primary p-4 rounded-2xl text-white">
 
-                    <a href="#">
-                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-red-600 m-auto rounded-2xl"></div>
+                    <a href="play-song.html">
+                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-[#29294a] m-auto rounded-2xl">
+                        </div>
                         <p class="text-center mt-3 font-Sahel">سلام</p>
-                        <p class="text-center mt-3 font-Sahel">سوگند</p>
+                        <p class="text-center mt-3 font-Sahel text-secondary">سوگند</p>
                     </a>
 
                 </div>
 
-                <div class="bg-blue-500 p-4 rounded-2xl">
+                <div class="bg-primary p-4 rounded-2xl text-white">
 
-                    <a href="#">
-                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-red-600 m-auto rounded-2xl"></div>
+                    <a href="play-song.html">
+                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-[#29294a] m-auto rounded-2xl">
+                        </div>
                         <p class="text-center mt-3 font-Sahel">سلام</p>
-                        <p class="text-center mt-3 font-Sahel">سوگند</p>
+                        <p class="text-center mt-3 font-Sahel text-secondary">سوگند</p>
                     </a>
 
                 </div>
@@ -355,59 +375,71 @@
 
 
     <!-- آخرین آلبوم ها -->
-    <div class="w-full bg-red-700 lg:mt-16 mt-10">
+    <div class="w-full lg:mt-16 mt-10">
 
-        <div class="lg:w-120 w-full m-auto bg-orange-400 lg:p-0 p-3">
+        <div class="lg:w-120 w-full m-auto lg:p-0 p-3">
 
-            <div class="w-full bg-sky-400 m-auto flex justify-between items-center">
+            <div class="w-full m-auto flex justify-between items-center">
 
-                <p class="lg:text-[22px] text-lg font-Sahel">آخرین آلبوم ها</p>
+                <p class="lg:text-[22px] text-lg font-Sahel text-white">آخرین آلبوم ها</p>
 
-                <div>
-                    <i class="fas fa-chevron-right lg:w-[35px] p-3 bg-red-800 rounded-tr-3xl rounded-br-3xl"></i>
-                    <a href="#" class="pr-4 pl-4 pt-1 pb-1 lg:w-[100px] bg-blue-600 font-yekan">بیشتر</a>
-                    <i class="fas fa-chevron-left lg:w-[35px] p-3 bg-red-800 rounded-tl-3xl rounded-bl-3xl"></i>
+                <div class="lg:block hidden">
+                    <i
+                        class="fas fa-chevron-right lg:w-[35px] p-3 bg-purple-500 text-white rounded-tr-3xl rounded-br-3xl"></i>
+                    <a href="albums.html" class="pr-4 pl-4 pt-1 pb-1 lg:w-[100px] bg-[#202040] text-white font-yekan">بیشتر</a>
+                    <i
+                        class="fas fa-chevron-left lg:w-[35px] p-3 bg-purple-500 text-white rounded-tl-3xl rounded-bl-3xl"></i>
                 </div>
 
             </div>
 
 
             <div
-                class="w-full bg-sky-900 pt-4 pb-4 lg:pr-5 pr-2 lg:pl-0 pl-2 m-auto mt-8 rounded-3xl grid lg:grid-cols-5 lg:gap-4 grid-cols-2 gap-4">
+                class="w-full bg-[#29294a] pt-4 pb-4 lg:pr-5 pr-2 lg:pl-0 pl-2 m-auto mt-8 rounded-3xl grid lg:grid-cols-5 lg:gap-4 grid-cols-2 gap-4">
 
                 <div class="lg:border-l-2 lg:border-black">
-                    <!-- <img src="./public/img/cover.jpg" alt="" width="200" height="200"/> -->
-                    <div class="lg:w-[200px] lg:h-[200px] w-full h-[200px] bg-lime-300 rounded-xl"></div>
-                    <p class="lg:mt-3 mt-2 text-center font-yekan">عالیجناب</p>
-                    <p class="lg:mt-2 mt-2 text-center font-yekan">ایوان بند</p>
+                    <a href="single-album.html">
+                        <!-- <img src="./public/img/cover.jpg" alt="" width="200" height="200"/> -->
+                        <div class="lg:w-[200px] lg:h-[200px] w-full h-[200px] rounded-xl"></div>
+                        <p class="lg:mt-3 mt-2 text-center font-yekan text-white">عالیجناب</p>
+                        <p class="lg:mt-2 mt-2 text-center font-yekan text-white">ایوان بند</p>
+                    </a>
                 </div>
 
                 <div class="lg:border-l-2 lg:border-black">
-                    <!-- <img src="./public/img/cover.jpg" alt="" width="200" height="200"/> -->
-                    <div class="lg:w-[200px] lg:h-[200px] w-full h-[200px] bg-lime-300 rounded-xl"></div>
-                    <p class="lg:mt-3 mt-2 text-center font-yekan">عالیجناب</p>
-                    <p class="lg:mt-2 mt-2 text-center font-yekan">ایوان بند</p>
+                    <a href="single-album.html">
+                        <!-- <img src="./public/img/cover.jpg" alt="" width="200" height="200"/> -->
+                        <div class="lg:w-[200px] lg:h-[200px] w-full h-[200px] rounded-xl"></div>
+                        <p class="lg:mt-3 mt-2 text-center font-yekan text-white">عالیجناب</p>
+                        <p class="lg:mt-2 mt-2 text-center font-yekan text-white">ایوان بند</p>
+                    </a>
                 </div>
 
                 <div class="lg:border-l-2 lg:border-black">
-                    <!-- <img src="./public/img/cover.jpg" alt="" width="200" height="200"/> -->
-                    <div class="lg:w-[200px] lg:h-[200px] w-full h-[200px] bg-lime-300 rounded-xl"></div>
-                    <p class="lg:mt-3 mt-2 text-center font-yekan">عالیجناب</p>
-                    <p class="lg:mt-2 mt-2 text-center font-yekan">ایوان بند</p>
+                    <a href="single-album.html">
+                        <!-- <img src="./public/img/cover.jpg" alt="" width="200" height="200"/> -->
+                        <div class="lg:w-[200px] lg:h-[200px] w-full h-[200px] rounded-xl"></div>
+                        <p class="lg:mt-3 mt-2 text-center font-yekan text-white">عالیجناب</p>
+                        <p class="lg:mt-2 mt-2 text-center font-yekan text-white">ایوان بند</p>
+                    </a>
                 </div>
 
                 <div class="lg:border-l-2 lg:border-black">
-                    <!-- <img src="./public/img/cover.jpg" alt="" width="200" height="200"/> -->
-                    <div class="lg:w-[200px] lg:h-[200px] w-full h-[200px] bg-lime-300 rounded-xl"></div>
-                    <p class="lg:mt-3 mt-2 text-center font-yekan">عالیجناب</p>
-                    <p class="lg:mt-2 mt-2 text-center font-yekan">ایوان بند</p>
+                    <a href="single-album.html">
+                        <!-- <img src="./public/img/cover.jpg" alt="" width="200" height="200"/> -->
+                        <div class="lg:w-[200px] lg:h-[200px] w-full h-[200px] rounded-xl"></div>
+                        <p class="lg:mt-3 mt-2 text-center font-yekan text-white">عالیجناب</p>
+                        <p class="lg:mt-2 mt-2 text-center font-yekan text-white">ایوان بند</p>
+                    </a>
                 </div>
 
                 <div class="">
-                    <!-- <img src="./public/img/cover.jpg" alt="" width="200" height="200"/> -->
-                    <div class="lg:w-[200px] lg:h-[200px] w-full h-[200px] bg-lime-300 rounded-xl"></div>
-                    <p class="lg:mt-3 mt-2 text-center font-yekan">عالیجناب</p>
-                    <p class="lg:mt-2 mt-2 text-center font-yekan">ایوان بند</p>
+                    <a href="single-album.html">
+                        <!-- <img src="./public/img/cover.jpg" alt="" width="200" height="200"/> -->
+                        <div class="lg:w-[200px] lg:h-[200px] w-full h-[200px] rounded-xl"></div>
+                        <p class="lg:mt-3 mt-2 text-center font-yekan text-white">عالیجناب</p>
+                        <p class="lg:mt-2 mt-2 text-center font-yekan text-white">ایوان بند</p>
+                    </a>
                 </div>
 
             </div>
@@ -421,74 +453,74 @@
 
 
     <!-- هنرمندان -->
-    <div class="w-full bg-red-500 lg:mt-16 mt-10">
+    <div class="w-full lg:mt-16 mt-10">
 
-        <div class="lg:w-120 w-full bg-lime-400 m-auto lg:p-0 p-3">
+        <div class="lg:w-120 w-full m-auto lg:p-0 p-3">
 
-            <div class="w-full bg-sky-400 m-auto flex justify-between items-center">
+            <div class="w-full m-auto flex justify-between items-center">
 
-                <p class="lg:text-[22px] text-lg font-Sahel">هنرمندان</p>
+                <p class="lg:text-[22px] text-lg font-Sahel text-white">هنرمندان</p>
 
                 <div>
-                    <a href="#" class="pr-4 pl-4 pt-1 pb-1 lg:w-[100px] bg-blue-600 font-yekan">بیشتر</a>
+                    <a href="artists.html" class="pr-4 pl-4 pt-1 pb-1 lg:w-[100px] bg-[#202040] text-white font-yekan">بیشتر</a>
                 </div>
 
             </div>
 
 
-            <div class="w-full bg-green-400 m-auto mt-8 grid lg:grid-cols-6 grid-cols-2 gap-5">
+            <div class="w-full m-auto mt-8 grid lg:grid-cols-6 grid-cols-2 gap-5">
 
-                <div class="bg-indigo-400">
-                    <a href="#">
+                <div>
+                    <a href="single-page-artist.html">
                         <div>
-                            <img src="./public/img/cover.jpg" alt="" class="rounded-full border-3 border-red-500" />
+                            <img src="./public/img/shadmehr.jpg" alt="" class="rounded-full border-5 border-purple-600" />
                         </div>
-                        <p class="text-center font-yekan mt-2">دنیا</p>
+                        <p class="text-center font-yekan mt-3 text-white">شادمهر عقیلی</p>
                     </a>
                 </div>
 
-                <div class="bg-indigo-400">
-                    <a href="#">
+                <div>
+                    <a href="single-page-artist.html">
                         <div>
-                            <img src="./public/img/cover.jpg" alt="" class="rounded-full border-3 border-red-500" />
+                            <img src="./public/img/donya.jpg" alt="" class="rounded-full border-5 border-purple-600" />
                         </div>
-                        <p class="text-center font-yekan mt-2">دنیا</p>
+                        <p class="text-center font-yekan mt-3 text-white">دنیا دادرسان</p>
                     </a>
                 </div>
 
-                <div class="bg-indigo-400">
-                    <a href="#">
+                <div>
+                    <a href="single-page-artist.html">
                         <div>
-                            <img src="./public/img/cover.jpg" alt="" class="rounded-full border-3 border-red-500" />
+                            <img src="./public/img/setian-img.jpg" alt="" class="rounded-full border-5 border-purple-600" />
                         </div>
-                        <p class="text-center font-yekan mt-2">دنیا</p>
+                        <p class="text-center font-yekan mt-3 text-white">ستین</p>
                     </a>
                 </div>
 
-                <div class="bg-indigo-400">
-                    <a href="#">
+                <div>
+                    <a href="single-page-artist.html">
                         <div>
-                            <img src="./public/img/cover.jpg" alt="" class="rounded-full border-3 border-red-500" />
+                            <img src="./public/img/shajarian.jpg" alt="" class="rounded-full border-5 border-purple-600" />
                         </div>
-                        <p class="text-center font-yekan mt-2">دنیا</p>
+                        <p class="text-center font-yekan mt-3 text-white">همایون شجریان</p>
                     </a>
                 </div>
 
-                <div class="bg-indigo-400">
-                    <a href="#">
+                <div>
+                    <a href="single-page-artist.html">
                         <div>
-                            <img src="./public/img/cover.jpg" alt="" class="rounded-full border-3 border-red-500" />
+                            <img src="./public/img/bani.jpg" alt="" class="rounded-full border-5 border-purple-600" />
                         </div>
-                        <p class="text-center font-yekan mt-2">دنیا</p>
+                        <p class="text-center font-yekan mt-3 text-white">بهنام بانی</p>
                     </a>
                 </div>
 
-                <div class="bg-indigo-400">
-                    <a href="#">
+                <div>
+                    <a href="single-page-artist.html">
                         <div>
-                            <img src="./public/img/cover.jpg" alt="" class="rounded-full border-3 border-red-500" />
+                            <img src="./public/img/gugush.jpg" alt="" class="rounded-full border-5 border-purple-600" />
                         </div>
-                        <p class="text-center font-yekan mt-2">دنیا</p>
+                        <p class="text-center font-yekan mt-3 text-white">گوگوش</p>
                     </a>
                 </div>
 
@@ -501,42 +533,43 @@
 
 
     <!-- نوار پخش آهنگ دسکتاپ -->
-    <div class="w-full h-[52px] bg-green-600 fixed bottom-0 right-0 left-0 lg:flex hidden justify-between pr-5 pl-5">
+    <div id="playerBar"
+        class="w-full h-[52px] bg-primary fixed bottom-0 right-0 left-0 lg:flex hidden justify-between pr-5 pl-5 transition-all duration-500">
 
-        <div class="lg:w-[10%] w-[50%] bg-orange-500 flex lg:flex-nowrap flex-wrap items-center gap-3">
-            <div class="w-[35px] h-[35px] bg-blue-500 flex items-center justify-center">
+        <div class="lg:w-[10%] w-[50%] flex lg:flex-nowrap flex-wrap items-center gap-3">
+            <button id="prevBtn" class="w-[35px] h-[35px] bg-purple-600 text-white flex items-center justify-center">
+                <i class="fa fa-step-backward" style="font-size: 27px;"></i>
+            </button>
+            <button id="togglePlay" class="w-[35px] h-[35px] bg-purple-600 text-white flex items-center justify-center">
+                <i id="playIcon" class="fa fa-play-circle" style="font-size: 27px;"></i>
+            </button>
+            <button id="nextBtn" class="w-[35px] h-[35px] bg-purple-600 text-white flex items-center justify-center">
                 <i class="fa fa-step-forward" style="font-size: 27px;"></i>
+            </button>
+        </div>
+
+        <div class="lg:w-[70%] w-full flex items-center pr-3 pl-3">
+            <input id="progress" type="range" class="w-full accent-purple-700" min="0" max="100" value="0" />
+        </div>
+
+        <div class="lg:w-[20%] w-[50%] flex gap-3 items-center">
+            <div class="w-[35%] text-center text-white">
+                <p id="timeDisplay" class="text-[15px] font-Sahel">0:00 / 0:00</p>
             </div>
-            <div class="w-[35px] h-[35px] bg-blue-500 flex items-center justify-center">
-                <i class="fa fa-play-circle" style="font-size: 27px;"></i>
-            </div>
-            <div class="w-[35px] h-[35px] bg-blue-500 flex items-center justify-center">
-                <i class="fa fa-step-forward" style="font-size: 27px;"></i>
+            <div class="w-[65%]">
+                <input id="volume" type="range" min="0" max="100" value="100" class="accent-purple-700 w-full" />
             </div>
         </div>
 
-        <div class="lg:w-[70%] w-full bg-violet-800 flex items-center pr-3 pl-3">
-            <input type="range" class="w-full accent-purple-700" min="0" max="100" value="0" />
-        </div>
-
-        <div class="lg:w-[20%] w-[50%] bg-indigo-500 flex gap-3 items-center">
-
-            <div class="bg-yellow-400 w-[35%] text-center">
-                <p class="text-[15px] font-Sahel">0:00 / 0:00</p>
-            </div>
-
-            <div class="bg-red-600 w-[65%]">
-                <input type="range" min="0" max="100" value="100" class="accent-purple-700 w-full" />
-            </div>
-
-        </div>
-
+        <!-- آهنگ -->
+        <audio id="audioPlayer" src="./public/audio/Satin - Do Nafari.mp3"></audio>
     </div>
+
 
 
     <!-- نوار پخش آهنگ موبایل  -->
 
-    <div class="w-full bg-green-600 fixed bottom-0 right-0 left-0 lg:hidden flex flex-wrap justify-between pr-2 pl-2">
+    <div class="w-full bg-purple-600 fixed bottom-0 right-0 left-0 lg:hidden flex flex-wrap justify-between pr-2 pl-2">
 
         <div class="w-[35%] bg-red-500 flex items-center gap-4">
             <div class="w-[30%] h-[28px] bg-blue-500 flex items-center justify-center">
@@ -564,36 +597,17 @@
 
 
         <div class="w-full bg-indigo-600 mt-3 p-2">
-            <input type="range" min="0" max="100" value="0" class="w-full"/>
+            <input type="range" min="0" max="100" value="0" class="w-full" />
         </div>
 
     </div>
-
-
-    <!-- <div class="fixed bottom-0 left-0 w-full bg-[#1E1E1E] shadow-lg flex items-center justify-between px-6 py-3">
-        <div class="flex items-center gap-4">
-            <button id="prevBtn" class="text-xl hover:text-purple-400">⏮</button>
-            <button id="playBtn" class="text-2xl hover:text-purple-400">▶️</button>
-            <button id="nextBtn" class="text-xl hover:text-purple-400">⏭</button>
-        </div>
-        <div class="flex-1 mx-6">
-            <input id="progressBar" type="range" value="0" min="0" max="100" class="w-full accent-purple-500">
-        </div>
-        <div class="text-sm text-gray-400" id="timeDisplay">0:00 / 0:00</div>
-        <div class="ml-4">
-            <input id="volumeControl" type="range" min="0" max="1" step="0.01" value="1" class="accent-purple-500">
-        </div>
-
-        <audio id="audioPlayer" src="./public/audio/Bazam Sharare (320).mp3"></audio>
-
-    </div> -->
 
 
 
 
     <!-- فوتر -->
 
-    <div class="w-full bg-sky-950 lg:mt-16 mt-10">
+    <div class="w-full bg-[#29294a] lg:mt-16 mt-10 text-white">
 
         <div class="lg:w-120 w-full m-auto">
 
@@ -601,7 +615,7 @@
 
                 <div class="lg:w-1/2 w-full lg:p-6 p-5">
 
-                    <div class="w-full lg:text-xl text-lg font-Sahel border-b-2 border-blue-600 pb-3">درباره ما</div>
+                    <div class="w-full lg:text-xl text-lg font-Sahel border-b-2 border-purple-600 pb-3">درباره ما</div>
                     <p class="mt-4 font-yekan">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
                         از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
                         شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای
@@ -612,17 +626,17 @@
 
                 <div class="lg:w-1/3 w-1/2 lg:p-6 p-5">
 
-                    <div class="w-full lg:text-xl text-lg font-Sahel border-b-2 border-blue-600 pb-3">آخرین آهنگ ها
+                    <div class="w-full lg:text-xl text-lg font-Sahel border-b-2 border-purple-600 pb-3">آخرین آهنگ ها
                     </div>
 
                     <ul class="mt-4 font-yekan">
 
                         <li class="mt-4">
-                            <a href="#">دانلود آهنگ شراره</a>
+                            <a href="#">دانلود آهنگ شراره (سعید آسایش )</a>
                         </li>
 
                         <li class="mt-4">
-                            <a href="#">دانلود آهنگ شراره</a>
+                            <a href="#">دانلود آهنگ دو نفری (ستین)</a>
                         </li>
 
                         <li class="mt-4">
@@ -639,7 +653,7 @@
 
                 <div class="lg:w-1/3 w-1/2 lg:p-6 p-5">
 
-                    <div class="w-full lg:text-xl text-lg font-Sahel border-b-2 border-blue-600 pb-3">شبکه های اجتماعی
+                    <div class="w-full lg:text-xl text-lg font-Sahel border-b-2 border-purple-600 pb-3">شبکه های اجتماعی
                     </div>
 
                     <div class="w-ful m-auto flex gap-4 mt-4">
@@ -658,6 +672,8 @@
 
     </div>
 
+
+    <script src="./public/js/code.js"></script>
 </body>
 
 </html>

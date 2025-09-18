@@ -9,33 +9,33 @@
     <link rel="stylesheet" href="./public/fontawesome/css/all.css" />
 </head>
 
-<body>
+<body class="bg-black-1000">
 
 
-    <div class="w-full h-[80px] bg-orange-400 m-auto lg:block hidden fixed top-0 z-50">
+    <div class="w-full bg-black-1000 h-[80px] m-auto lg:block hidden fixed top-0 z-50">
 
-        <div class="w-120 h-full bg-blue-700 m-auto flex justify-center pt-5 pb-5">
+        <div class="w-120 h-full m-auto flex justify-center pt-5 pb-5">
 
-            <div class="bg-red-600 text-2xl flex items-center">
+            <div class="text-2xl flex items-center">
                 <a href="index.html">
                     <img src="./public/img/logo.png" alt="" width="120" height="120" />
                 </a>
             </div>
 
-            <div class="bg-green-900 w-[57%] h-full flex items-center lg:pr-10">
+            <div class="w-[57%] h-full flex items-center lg:pr-10 text-white">
 
                 <ul class="flex gap-x-10 font-yekan">
 
                     <li>
-                        <a href="index.html" class="bg-violet-600">صفحه اصلی</a>
+                        <a href="index.html" class="hover:border-b-2 border-b-purple-600">صفحه اصلی</a>
                     </li>
 
                     <li>
-                        <a href="music.html" class="bg-violet-600">آهنگ ها</a>
+                        <a href="music.html" class="hover:border-b-2 border-b-purple-600">آهنگ ها</a>
                     </li>
 
                     <li>
-                        <a href="#categories" class="bg-violet-600">دسته بندی موسیقی</a>
+                        <a href="index.html#categories" class="hover:border-b-2 border-b-purple-600">دسته بندی موسیقی</a>
                     </li>
 
 
@@ -43,15 +43,15 @@
 
             </div>
 
-            <div class="bg-yellow-400 w-[28%] flex justify-end">
-                <div class="w-[85%] bg-white flex p-[3px]">
+            <div class="w-[28%] flex justify-end">
+                <div class="w-[85%] bg-[#262648] flex p-[3px]">
 
                     <div class="w-[40px] h-[35px] flex justify-center items-center">
-                        <i class="fas fa-search" style="font-size: 20px;"></i>
+                        <i class="fas fa-search" style="font-size: 20px;color: white;"></i>
                     </div>
 
                     <input type="text" value="" placeholder="جست وجو آهنگ"
-                        class="font-yekan w-full pr-2 border-none outline-none" />
+                        class="font-yekan w-full pr-2 border-none outline-none text-white" />
 
                 </div>
             </div>
@@ -107,141 +107,142 @@
 
     <!-- banner arist -->
 
-    <div class="w-full h-[370px] bg-orange-500 lg:mt-20 mt-28">
-
-        <div class="w-120 lg:w-full h-full bg-pink-600 m-auto"></div>
-
+    <div class="w-full lg:mt-20 mt-[60px]">
+        <div class="max-w-full m-auto">
+            <img src="./public/img/banner-donya.png" alt="بنر" class="w-full h-auto object-cover" />
+        </div>
     </div>
+
 
 
     <!-- موزیک های برتر -->
 
-    <div class="w-full bg-yellow-500 lg:mt-16 mt-10">
+    <div class="w-full lg:mt-16 mt-10">
 
-        <div class="lg:w-120 w-full bg-yellow-700 m-auto lg:p-0 p-3">
+        <div class="lg:w-120 w-full m-auto lg:p-0 p-3">
 
-            <div class="w-full bg-emerald-500 m-auto text-xl font-Sahel p-2 rounded-md pr-5">برترین موزیک ها</div>
+            <div class="w-full text-white m-auto text-xl font-Sahel p-2 rounded-md pr-5">برترین موزیک ها</div>
 
-            <div class="w-full bg-red-400 m-auto mt-10 grid lg:grid-cols-3 grid-cols-1 gap-5">
+            <div class="w-full m-auto mt-10 grid lg:grid-cols-3 grid-cols-1 gap-5">
 
-                <div class="bg-green-900 flex justify-between p-3 items-center rounded-[15px]">
+                <div class="bg-primary flex justify-between p-3 items-center rounded-[15px]">
 
-                    <div class="bg-blue-400 flex gap-5">
-                        <i class="fas fa-play" style="font-size: 29px;"></i>
-                        <i class="fas fa-download" style="font-size: 29px;"></i>
+                    <div class="flex gap-5">
+                        <i class="fas fa-play text-purple-600" style="font-size: 29px;"></i>
+                        <i class="fas fa-download text-purple-600" style="font-size: 29px;"></i>
                     </div>
 
-                    <div class=" mr-28 pl-3">
-                        <p class="font-Sahel text-lg">سلام</p>
-                        <p class="font-yekan mt-6">دنیا</p>
+                    <div class="mr-10 text-left">
+                        <p class="font-yekan text-white">دارم از خوشی میمیرم</p>
+                        <p class="font-yekan mt-6 text-secondary">بابک جهانبخش</p>
                     </div>
 
-                    <div class="bg-blue-700">
+                    <div>
 
-                        <div class="w-[90px] h-[90px] bg-lime-500 rounded-lg"></div>
-
-                    </div>
-
-                </div>
-
-                <div class="bg-green-900 flex justify-between p-3 items-center rounded-[15px]">
-
-                    <div class="bg-blue-400 flex gap-5">
-                        <i class="fas fa-play" style="font-size: 29px;"></i>
-                        <i class="fas fa-download" style="font-size: 29px;"></i>
-                    </div>
-
-                    <div class=" mr-28 pl-3">
-                        <p class="font-Sahel text-lg">سلام</p>
-                        <p class="font-yekan mt-6">دنیا</p>
-                    </div>
-
-                    <div class="bg-blue-700">
-
-                        <div class="w-[90px] h-[90px] bg-lime-500 rounded-lg"></div>
+                        <div class="w-[90px] h-[90px] bg-[#29294a] rounded-lg"></div>
 
                     </div>
 
                 </div>
 
-                <div class="bg-green-900 flex justify-between p-3 items-center rounded-[15px]">
+                <div class="bg-primary flex justify-between p-3 items-center rounded-[15px]">
 
-                    <div class="bg-blue-400 flex gap-5">
-                        <i class="fas fa-play" style="font-size: 29px;"></i>
-                        <i class="fas fa-download" style="font-size: 29px;"></i>
+                    <div class="flex gap-5">
+                        <i class="fas fa-play text-purple-600" style="font-size: 29px;"></i>
+                        <i class="fas fa-download text-purple-600" style="font-size: 29px;"></i>
                     </div>
 
-                    <div class=" mr-28 pl-3">
-                        <p class="font-Sahel text-lg">سلام</p>
-                        <p class="font-yekan mt-6">دنیا</p>
+                    <div class="mr-10 text-left">
+                        <p class="font-yekan text-white">دارم از خوشی میمیرم</p>
+                        <p class="font-yekan mt-6 text-secondary">بابک جهانبخش</p>
                     </div>
 
-                    <div class="bg-blue-700">
+                    <div>
 
-                        <div class="w-[90px] h-[90px] bg-lime-500 rounded-lg"></div>
+                        <div class="w-[90px] h-[90px] bg-[#29294a] rounded-lg"></div>
 
                     </div>
 
                 </div>
 
+                <div class="bg-primary flex justify-between p-3 items-center rounded-[15px]">
 
-                <div class="bg-green-900 flex justify-between p-3 items-center rounded-[15px]">
-
-                    <div class="bg-blue-400 flex gap-5">
-                        <i class="fas fa-play" style="font-size: 29px;"></i>
-                        <i class="fas fa-download" style="font-size: 29px;"></i>
+                    <div class="flex gap-5">
+                        <i class="fas fa-play text-purple-600" style="font-size: 29px;"></i>
+                        <i class="fas fa-download text-purple-600" style="font-size: 29px;"></i>
                     </div>
 
-                    <div class=" mr-28 pl-3">
-                        <p class="font-Sahel text-lg">سلام</p>
-                        <p class="font-yekan mt-6">دنیا</p>
+                    <div class="mr-10 text-left">
+                        <p class="font-yekan text-white">دارم از خوشی میمیرم</p>
+                        <p class="font-yekan mt-6 text-secondary">بابک جهانبخش</p>
                     </div>
 
-                    <div class="bg-blue-700">
+                    <div>
 
-                        <div class="w-[90px] h-[90px] bg-lime-500 rounded-lg"></div>
+                        <div class="w-[90px] h-[90px] bg-[#29294a] rounded-lg"></div>
 
                     </div>
 
                 </div>
 
 
-                <div class="bg-green-900 flex justify-between p-3 items-center rounded-[15px]">
+                <div class="bg-primary flex justify-between p-3 items-center rounded-[15px]">
 
-                    <div class="bg-blue-400 flex gap-5">
-                        <i class="fas fa-play" style="font-size: 29px;"></i>
-                        <i class="fas fa-download" style="font-size: 29px;"></i>
+                    <div class="flex gap-5">
+                        <i class="fas fa-play text-purple-600" style="font-size: 29px;"></i>
+                        <i class="fas fa-download text-purple-600" style="font-size: 29px;"></i>
                     </div>
 
-                    <div class=" mr-28 pl-3">
-                        <p class="font-Sahel text-lg">سلام</p>
-                        <p class="font-yekan mt-6">دنیا</p>
+                    <div class="mr-10 text-left">
+                        <p class="font-yekan text-white">دارم از خوشی میمیرم</p>
+                        <p class="font-yekan mt-6 text-secondary">بابک جهانبخش</p>
                     </div>
 
-                    <div class="bg-blue-700">
+                    <div>
 
-                        <div class="w-[90px] h-[90px] bg-lime-500 rounded-lg"></div>
+                        <div class="w-[90px] h-[90px] bg-[#29294a] rounded-lg"></div>
 
                     </div>
 
                 </div>
 
 
-                <div class="bg-green-900 flex justify-between p-3 items-center rounded-[15px]">
+                <div class="bg-primary flex justify-between p-3 items-center rounded-[15px]">
 
-                    <div class="bg-blue-400 flex gap-5">
-                        <i class="fas fa-play" style="font-size: 29px;"></i>
-                        <i class="fas fa-download" style="font-size: 29px;"></i>
+                    <div class="flex gap-5">
+                        <i class="fas fa-play text-purple-600" style="font-size: 29px;"></i>
+                        <i class="fas fa-download text-purple-600" style="font-size: 29px;"></i>
                     </div>
 
-                    <div class=" mr-28 pl-3">
-                        <p class="font-Sahel text-lg">سلام</p>
-                        <p class="font-yekan mt-6">دنیا</p>
+                    <div class="mr-10 text-left">
+                        <p class="font-yekan text-white">دارم از خوشی میمیرم</p>
+                        <p class="font-yekan mt-6 text-secondary">بابک جهانبخش</p>
                     </div>
 
-                    <div class="bg-blue-700">
+                    <div>
 
-                        <div class="w-[90px] h-[90px] bg-lime-500 rounded-lg"></div>
+                        <div class="w-[90px] h-[90px] bg-[#29294a] rounded-lg"></div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="bg-primary flex justify-between p-3 items-center rounded-[15px]">
+
+                    <div class="flex gap-5">
+                        <i class="fas fa-play text-purple-600" style="font-size: 29px;"></i>
+                        <i class="fas fa-download text-purple-600" style="font-size: 29px;"></i>
+                    </div>
+
+                    <div class="mr-10 text-left">
+                        <p class="font-yekan text-white">دارم از خوشی میمیرم</p>
+                        <p class="font-yekan mt-6 text-secondary">بابک جهانبخش</p>
+                    </div>
+
+                    <div>
+
+                        <div class="w-[90px] h-[90px] bg-[#29294a] rounded-lg"></div>
 
                     </div>
 
@@ -259,25 +260,25 @@
 
     <!-- آخرین آلبوم ها -->
 
-    <div class="w-full bg-orange-600 lg:mt-16 mt-10">
+    <div class="w-full lg:mt-16 mt-10">
 
-        <div class="lg:w-120 w-full bg-sky-600 m-auto">
+        <div class="lg:w-120 w-full m-auto">
 
-            <div class="w-full bg-emerald-500 m-auto text-xl font-Sahel p-2 rounded-md pr-5">آخرین آلبوم ها</div>
+            <div class="w-full text-white m-auto text-xl font-Sahel p-2 rounded-md pr-5">آخرین آلبوم ها</div>
 
-            <div class="w-full bg-yellow-900 grid lg:grid-cols-6 gap-5 mt-10">
+            <div class="w-full grid lg:grid-cols-6 gap-5 mt-10">
 
-                <div class="bg-violet-800 h-[180px] rounded-2xl"></div>
+                <div class="bg-[#29294a] h-[180px] rounded-2xl"></div>
 
-                <div class="bg-violet-800 rounded-2xl"></div>
+                <div class="bg-[#29294a] rounded-2xl"></div>
 
-                <div class="bg-violet-800 rounded-2xl"></div>
+                <div class="bg-[#29294a] rounded-2xl"></div>
 
-                <div class="bg-violet-800 rounded-2xl"></div>
+                <div class="bg-[#29294a] rounded-2xl"></div>
 
-                <div class="bg-violet-800 rounded-2xl"></div>
+                <div class="bg-[#29294a] rounded-2xl"></div>
 
-                <div class="bg-violet-800 rounded-2xl"></div>
+                <div class="bg-[#29294a] rounded-2xl"></div>
 
             </div>
 
@@ -289,7 +290,7 @@
 
     <!-- فوتر -->
 
-    <div class="w-full bg-sky-950 lg:mt-16 mt-10">
+    <div class="w-full bg-[#29294a] lg:mt-16 mt-10 text-white">
 
         <div class="lg:w-120 w-full m-auto">
 
@@ -297,7 +298,7 @@
 
                 <div class="lg:w-1/2 w-full lg:p-6 p-5">
 
-                    <div class="w-full lg:text-xl text-lg font-Sahel border-b-2 border-blue-600 pb-3">درباره ما</div>
+                    <div class="w-full lg:text-xl text-lg font-Sahel border-b-2 border-purple-600 pb-3">درباره ما</div>
                     <p class="mt-4 font-yekan">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
                         از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
                         شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای
@@ -308,17 +309,17 @@
 
                 <div class="lg:w-1/3 w-1/2 lg:p-6 p-5">
 
-                    <div class="w-full lg:text-xl text-lg font-Sahel border-b-2 border-blue-600 pb-3">آخرین آهنگ ها
+                    <div class="w-full lg:text-xl text-lg font-Sahel border-b-2 border-purple-600 pb-3">آخرین آهنگ ها
                     </div>
 
                     <ul class="mt-4 font-yekan">
 
                         <li class="mt-4">
-                            <a href="#">دانلود آهنگ شراره</a>
+                            <a href="#">دانلود آهنگ شراره (سعید آسایش )</a>
                         </li>
 
                         <li class="mt-4">
-                            <a href="#">دانلود آهنگ شراره</a>
+                            <a href="#">دانلود آهنگ دو نفری (ستین)</a>
                         </li>
 
                         <li class="mt-4">
@@ -335,7 +336,7 @@
 
                 <div class="lg:w-1/3 w-1/2 lg:p-6 p-5">
 
-                    <div class="w-full lg:text-xl text-lg font-Sahel border-b-2 border-blue-600 pb-3">شبکه های اجتماعی
+                    <div class="w-full lg:text-xl text-lg font-Sahel border-b-2 border-purple-600 pb-3">شبکه های اجتماعی
                     </div>
 
                     <div class="w-ful m-auto flex gap-4 mt-4">

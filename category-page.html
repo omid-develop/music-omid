@@ -9,33 +9,33 @@
     <link rel="stylesheet" href="./public/fontawesome/css/all.css" />
 </head>
 
-<body>
+<body class="bg-black-1000">
 
 
-    <div class="w-full h-[80px] bg-orange-400 m-auto lg:block hidden fixed top-0 z-50">
+    <div class="w-full bg-black-1000 h-[80px] m-auto lg:block hidden fixed top-0 z-50 border-b-1 border-purple-400">
 
-        <div class="w-120 h-full bg-blue-700 m-auto flex justify-center pt-5 pb-5">
+        <div class="w-120 h-full m-auto flex justify-center pt-5 pb-5">
 
-            <div class="bg-red-600 text-2xl flex items-center">
+            <div class="text-2xl flex items-center">
                 <a href="index.html">
                     <img src="./public/img/logo.png" alt="" width="120" height="120" />
                 </a>
             </div>
 
-            <div class="bg-green-900 w-[57%] h-full flex items-center lg:pr-10">
+            <div class="w-[57%] h-full flex items-center lg:pr-10 text-white">
 
                 <ul class="flex gap-x-10 font-yekan">
 
                     <li>
-                        <a href="index.html" class="bg-violet-600">صفحه اصلی</a>
+                        <a href="index.html" class="hover:border-b-2 border-b-purple-600">صفحه اصلی</a>
                     </li>
 
                     <li>
-                        <a href="music.html" class="bg-violet-600">آهنگ ها</a>
+                        <a href="music.html" class="hover:border-b-2 border-b-purple-600">آهنگ ها</a>
                     </li>
 
                     <li>
-                        <a href="#categories" class="bg-violet-600">دسته بندی موسیقی</a>
+                        <a href="index.html#categories" class="hover:border-b-2 border-b-purple-600">دسته بندی موسیقی</a>
                     </li>
 
 
@@ -43,14 +43,15 @@
 
             </div>
 
-            <div class="bg-yellow-400 w-[28%] flex justify-end">
-                <div class="w-[85%] bg-white flex p-[3px]">
+            <div class="w-[28%] flex justify-end">
+                <div class="w-[85%] bg-[#262648] flex p-[3px]">
 
                     <div class="w-[40px] h-[35px] flex justify-center items-center">
-                        <i class="fas fa-search" style="font-size: 20px;"></i>
+                        <i class="fas fa-search" style="font-size: 20px;color: white;"></i>
                     </div>
 
-                    <input type="text" value="" placeholder="جست وجو آهنگ" class="font-yekan w-full pr-2 border-none outline-none" />
+                    <input type="text" value="" placeholder="جست وجو آهنگ"
+                        class="font-yekan w-full pr-2 border-none outline-none text-white" />
 
                 </div>
             </div>
@@ -106,136 +107,208 @@
 
     <!-- دسته بندی آهنگ ها -->
 
-    <div class="w-full bg-red-300 m-auto lg:mt-36 mt-28">
+    <div class="w-full m-auto lg:mt-36 mt-28">
 
-        <div class="lg:w-120 w-full bg-green-600 m-auto lg:p-0 p-3">
+        <div class="lg:w-120 w-full m-auto lg:p-0 p-3">
 
-            <div class="w-full bg-yellow-500 m-auto text-xl font-Sahel p-2 rounded-md pr-5">موسیقی پاپ</div>
+            <div class="w-full text-white m-auto text-xl font-Sahel p-2 rounded-md pr-5">موسیقی پاپ</div>
 
-            <div class="w-full bg-yellow-950 m-auto mt-6 grid lg:grid-cols-6 grid-cols-2 gap-5">
+            <div class="w-full m-auto mt-6 grid lg:grid-cols-6 grid-cols-2 gap-5">
 
-                <div class="bg-blue-500 p-4 rounded-2xl">
+                <div class="bg-primary p-4 rounded-2xl">
 
                     <a href="#">
-                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-red-600 m-auto rounded-2xl"></div>
-                        <p class="text-center mt-3 font-Sahel">سلام</p>
-                        <p class="text-center mt-3 font-Sahel">سوگند</p>
+                        <div
+                            class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-[#29294a] m-auto rounded-2xl flex items-center justify-center">
+                            <!-- <img src="./public/img/sonati.png" /> -->
+                            <div class="text-center absolute">
+                                <i class="fa fa-play-circle" style="font-size: 31px;color: white;"></i>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3 font-Sahel text-white">سلام</p>
+                        <p class="text-center mt-3 font-Sahel text-secondary">سوگند</p>
                     </a>
 
                 </div>
 
-                <div class="bg-blue-500 p-4 rounded-2xl">
+                <div class="bg-primary p-4 rounded-2xl">
 
                     <a href="#">
-                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-red-600 m-auto rounded-2xl"></div>
-                        <p class="text-center mt-3 font-Sahel">سلام</p>
-                        <p class="text-center mt-3 font-Sahel">سوگند</p>
+                        <div
+                            class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-[#29294a] m-auto rounded-2xl flex items-center justify-center">
+                            <!-- <img src="./public/img/sonati.png" /> -->
+                            <div class="text-center absolute">
+                                <i class="fa fa-play-circle" style="font-size: 31px;color: white;"></i>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3 font-Sahel text-white">سلام</p>
+                        <p class="text-center mt-3 font-Sahel text-secondary">سوگند</p>
                     </a>
 
                 </div>
 
-                <div class="bg-blue-500 p-4 rounded-2xl">
+                <div class="bg-primary p-4 rounded-2xl">
 
                     <a href="#">
-                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-red-600 m-auto rounded-2xl"></div>
-                        <p class="text-center mt-3 font-Sahel">سلام</p>
-                        <p class="text-center mt-3 font-Sahel">سوگند</p>
+                        <div
+                            class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-[#29294a] m-auto rounded-2xl flex items-center justify-center">
+                            <!-- <img src="./public/img/sonati.png" /> -->
+                            <div class="text-center absolute">
+                                <i class="fa fa-play-circle" style="font-size: 31px;color: white;"></i>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3 font-Sahel text-white">سلام</p>
+                        <p class="text-center mt-3 font-Sahel text-secondary">سوگند</p>
                     </a>
 
                 </div>
 
-                <div class="bg-blue-500 p-4 rounded-2xl">
+                <div class="bg-primary p-4 rounded-2xl">
 
                     <a href="#">
-                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-red-600 m-auto rounded-2xl"></div>
-                        <p class="text-center mt-3 font-Sahel">سلام</p>
-                        <p class="text-center mt-3 font-Sahel">سوگند</p>
+                        <div
+                            class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-[#29294a] m-auto rounded-2xl flex items-center justify-center">
+                            <!-- <img src="./public/img/sonati.png" /> -->
+                            <div class="text-center absolute">
+                                <i class="fa fa-play-circle" style="font-size: 31px;color: white;"></i>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3 font-Sahel text-white">سلام</p>
+                        <p class="text-center mt-3 font-Sahel text-secondary">سوگند</p>
                     </a>
 
                 </div>
 
-                <div class="bg-blue-500 p-4 rounded-2xl">
+                <div class="bg-primary p-4 rounded-2xl">
 
                     <a href="#">
-                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-red-600 m-auto rounded-2xl"></div>
-                        <p class="text-center mt-3 font-Sahel">سلام</p>
-                        <p class="text-center mt-3 font-Sahel">سوگند</p>
+                        <div
+                            class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-[#29294a] m-auto rounded-2xl flex items-center justify-center">
+                            <!-- <img src="./public/img/sonati.png" /> -->
+                            <div class="text-center absolute">
+                                <i class="fa fa-play-circle" style="font-size: 31px;color: white;"></i>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3 font-Sahel text-white">سلام</p>
+                        <p class="text-center mt-3 font-Sahel text-secondary">سوگند</p>
                     </a>
 
                 </div>
 
-                <div class="bg-blue-500 p-4 rounded-2xl">
+                <div class="bg-primary p-4 rounded-2xl">
 
                     <a href="#">
-                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-red-600 m-auto rounded-2xl"></div>
-                        <p class="text-center mt-3 font-Sahel">سلام</p>
-                        <p class="text-center mt-3 font-Sahel">سوگند</p>
-                    </a>
-
-                </div>
-
-
-                <div class="bg-blue-500 p-4 rounded-2xl">
-
-                    <a href="#">
-                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-red-600 m-auto rounded-2xl"></div>
-                        <p class="text-center mt-3 font-Sahel">سلام</p>
-                        <p class="text-center mt-3 font-Sahel">سوگند</p>
-                    </a>
-
-                </div>
-
-
-                <div class="bg-blue-500 p-4 rounded-2xl">
-
-                    <a href="#">
-                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-red-600 m-auto rounded-2xl"></div>
-                        <p class="text-center mt-3 font-Sahel">سلام</p>
-                        <p class="text-center mt-3 font-Sahel">سوگند</p>
-                    </a>
-
-                </div>
-
-
-                <div class="bg-blue-500 p-4 rounded-2xl">
-
-                    <a href="#">
-                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-red-600 m-auto rounded-2xl"></div>
-                        <p class="text-center mt-3 font-Sahel">سلام</p>
-                        <p class="text-center mt-3 font-Sahel">سوگند</p>
-                    </a>
-
-                </div>
-
-
-                <div class="bg-blue-500 p-4 rounded-2xl">
-
-                    <a href="#">
-                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-red-600 m-auto rounded-2xl"></div>
-                        <p class="text-center mt-3 font-Sahel">سلام</p>
-                        <p class="text-center mt-3 font-Sahel">سوگند</p>
+                        <div
+                            class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-[#29294a] m-auto rounded-2xl flex items-center justify-center">
+                            <!-- <img src="./public/img/sonati.png" /> -->
+                            <div class="text-center absolute">
+                                <i class="fa fa-play-circle" style="font-size: 31px;color: white;"></i>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3 font-Sahel text-white">سلام</p>
+                        <p class="text-center mt-3 font-Sahel text-secondary">سوگند</p>
                     </a>
 
                 </div>
 
 
-                <div class="bg-blue-500 p-4 rounded-2xl">
+                <div class="bg-primary p-4 rounded-2xl">
 
                     <a href="#">
-                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-red-600 m-auto rounded-2xl"></div>
-                        <p class="text-center mt-3 font-Sahel">سلام</p>
-                        <p class="text-center mt-3 font-Sahel">سوگند</p>
+                        <div
+                            class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-[#29294a] m-auto rounded-2xl flex items-center justify-center">
+                            <!-- <img src="./public/img/sonati.png" /> -->
+                            <div class="text-center absolute">
+                                <i class="fa fa-play-circle" style="font-size: 31px;color: white;"></i>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3 font-Sahel text-white">سلام</p>
+                        <p class="text-center mt-3 font-Sahel text-secondary">سوگند</p>
                     </a>
 
                 </div>
 
 
-                <div class="bg-blue-500 p-4 rounded-2xl">
+                <div class="bg-primary p-4 rounded-2xl">
 
                     <a href="#">
-                        <div class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-red-600 m-auto rounded-2xl"></div>
-                        <p class="text-center mt-3 font-Sahel">سلام</p>
-                        <p class="text-center mt-3 font-Sahel">سوگند</p>
+                        <div
+                            class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-[#29294a] m-auto rounded-2xl flex items-center justify-center">
+                            <!-- <img src="./public/img/sonati.png" /> -->
+                            <div class="text-center absolute">
+                                <i class="fa fa-play-circle" style="font-size: 31px;color: white;"></i>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3 font-Sahel text-white">سلام</p>
+                        <p class="text-center mt-3 font-Sahel text-secondary">سوگند</p>
+                    </a>
+
+                </div>
+
+
+                <div class="bg-primary p-4 rounded-2xl">
+
+                    <a href="#">
+                        <div
+                            class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-[#29294a] m-auto rounded-2xl flex items-center justify-center">
+                            <!-- <img src="./public/img/sonati.png" /> -->
+                            <div class="text-center absolute">
+                                <i class="fa fa-play-circle" style="font-size: 31px;color: white;"></i>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3 font-Sahel text-white">سلام</p>
+                        <p class="text-center mt-3 font-Sahel text-secondary">سوگند</p>
+                    </a>
+
+                </div>
+
+
+                <div class="bg-primary p-4 rounded-2xl">
+
+                    <a href="#">
+                        <div
+                            class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-[#29294a] m-auto rounded-2xl flex items-center justify-center">
+                            <!-- <img src="./public/img/sonati.png" /> -->
+                            <div class="text-center absolute">
+                                <i class="fa fa-play-circle" style="font-size: 31px;color: white;"></i>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3 font-Sahel text-white">سلام</p>
+                        <p class="text-center mt-3 font-Sahel text-secondary">سوگند</p>
+                    </a>
+
+                </div>
+
+
+                <div class="bg-primary p-4 rounded-2xl">
+
+                    <a href="#">
+                        <div
+                            class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-[#29294a] m-auto rounded-2xl flex items-center justify-center">
+                            <!-- <img src="./public/img/sonati.png" /> -->
+                            <div class="text-center absolute">
+                                <i class="fa fa-play-circle" style="font-size: 31px;color: white;"></i>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3 font-Sahel text-white">سلام</p>
+                        <p class="text-center mt-3 font-Sahel text-secondary">سوگند</p>
+                    </a>
+
+                </div>
+
+
+                <div class="bg-primary p-4 rounded-2xl">
+
+                    <a href="#">
+                        <div
+                            class="lg:w-[150px] lg:h-[150px] w-[130px] h-[130px] bg-[#29294a] m-auto rounded-2xl flex items-center justify-center">
+                            <!-- <img src="./public/img/sonati.png" /> -->
+                            <div class="text-center absolute">
+                                <i class="fa fa-play-circle" style="font-size: 31px;color: white;"></i>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3 font-Sahel text-white">سلام</p>
+                        <p class="text-center mt-3 font-Sahel text-secondary">سوگند</p>
                     </a>
 
                 </div>
@@ -245,23 +318,29 @@
 
 
 
-            <div class="w-full bg-indigo-300 m-auto mt-12 flex justify-center lg:gap-5 gap-1">
+            <div class="w-full m-auto mt-12 flex justify-center lg:gap-5 gap-1">
 
-                <button class="w-[43px] h-[43px] bg-blue-700 font-Sahel text-[17px]">
+                <button
+                    class="w-[43px] h-[43px] border-1 border-white text-purple-600 rounded-md font-Sahel text-[17px]">
                     قبلی
                 </button>
 
-                <button class="w-[43px] h-[43px] bg-blue-700 font-Sahel text-[20px]">1</button>
+                <button
+                    class="w-[43px] h-[43px] border-1 border-white text-purple-600 rounded-md font-Sahel text-[20px]">01</button>
 
-                <button class="w-[43px] h-[43px] bg-blue-700 font-Sahel text-[20px]">2</button>
+                <button
+                    class="w-[43px] h-[43px] border-1 border-white text-purple-600 rounded-md font-Sahel text-[20px]">02</button>
 
-                <button class="w-[43px] h-[43px] bg-blue-700 font-Sahel text-[20px]">3</button>
+                <button class="w-[43px] h-[43px] bg-purple-600 text-white rounded-md font-Sahel text-[20px]">03</button>
 
-                <button class="w-[43px] h-[43px] bg-blue-700 font-Sahel text-[20px]">...</button>
+                <button
+                    class="w-[43px] h-[43px] border-1 border-white text-purple-600 rounded-md font-Sahel text-[20px]">...</button>
 
-                <button class="w-[43px] h-[43px] bg-blue-700 font-Sahel text-[20px]">8</button>
+                <button
+                    class="w-[43px] h-[43px] border-1 border-white text-purple-600 rounded-md font-Sahel text-[20px]">04</button>
 
-                <button class="w-[43px] h-[43px] bg-blue-700 font-Sahel text-[17px]">
+                <button
+                    class="w-[43px] h-[43px] border-1 border-white text-purple-600 rounded-md font-Sahel text-[17px]">
                     بعدی
                 </button>
 
@@ -276,7 +355,7 @@
 
     <!-- فوتر -->
 
-    <div class="w-full bg-sky-950 lg:mt-16 mt-10">
+    <div class="w-full bg-[#29294a] lg:mt-16 mt-10 text-white">
 
         <div class="lg:w-120 w-full m-auto">
 
@@ -284,7 +363,7 @@
 
                 <div class="lg:w-1/2 w-full lg:p-6 p-5">
 
-                    <div class="w-full lg:text-xl text-lg font-Sahel border-b-2 border-blue-600 pb-3">درباره ما</div>
+                    <div class="w-full lg:text-xl text-lg font-Sahel border-b-2 border-purple-600 pb-3">درباره ما</div>
                     <p class="mt-4 font-yekan">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
                         از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
                         شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای
@@ -295,17 +374,17 @@
 
                 <div class="lg:w-1/3 w-1/2 lg:p-6 p-5">
 
-                    <div class="w-full lg:text-xl text-lg font-Sahel border-b-2 border-blue-600 pb-3">آخرین آهنگ ها
+                    <div class="w-full lg:text-xl text-lg font-Sahel border-b-2 border-purple-600 pb-3">آخرین آهنگ ها
                     </div>
 
                     <ul class="mt-4 font-yekan">
 
                         <li class="mt-4">
-                            <a href="#">دانلود آهنگ شراره</a>
+                            <a href="#">دانلود آهنگ شراره (سعید آسایش )</a>
                         </li>
 
                         <li class="mt-4">
-                            <a href="#">دانلود آهنگ شراره</a>
+                            <a href="#">دانلود آهنگ دو نفری (ستین)</a>
                         </li>
 
                         <li class="mt-4">
@@ -322,7 +401,7 @@
 
                 <div class="lg:w-1/3 w-1/2 lg:p-6 p-5">
 
-                    <div class="w-full lg:text-xl text-lg font-Sahel border-b-2 border-blue-600 pb-3">شبکه های اجتماعی
+                    <div class="w-full lg:text-xl text-lg font-Sahel border-b-2 border-purple-600 pb-3">شبکه های اجتماعی
                     </div>
 
                     <div class="w-ful m-auto flex gap-4 mt-4">

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 /* @config "../tailwind.config.js"; */
 
-body{
+body {
     padding: 0;
     margin: 0;
     direction: rtl;
@@ -11,37 +11,79 @@ body{
 @font-face {
     font-family: 'Yekan';
     src: url('../public/fonts/Yekan.eot') format('eot'),
-    url('../public/fonts/Yekan.woff') format('woff'),
-    url('../public/fonts/Yekan.ttf') format('ttf');
+        url('../public/fonts/Yekan.woff') format('woff'),
+        url('../public/fonts/Yekan.ttf') format('ttf');
 }
 
 
 @font-face {
     font-family: 'Sahel';
     src: url('../public/fonts/Sahel-Bold.eot') format('eot'),
-    url('../public/fonts/Sahel-Bold.woff') format('woff'),
-    url('../public/fonts/Sahel-Bold.ttf') format('ttf');
+        url('../public/fonts/Sahel-Bold.woff') format('woff'),
+        url('../public/fonts/Sahel-Bold.ttf') format('ttf');
 }
 
 
-@theme{
-      --width-120:1200px;
-      --width-200:200px;
-      --font-yekan:Yekan;
-      --font-Sahel:Sahel;
+@theme {
+    --width-120: 1200px;
+    --width-200: 200px;
+    --font-yekan: Yekan;
+    --font-Sahel: Sahel;
+    --color-primary: #17172b;
+    /* بنفش نئونی */
+    --color-purple-500: #903293;
+    --color-black-1000: #0c0c17;
+    /* پس‌زمینه مشکی تیره */
+    --color-secondary: #c9c9c3;
+    /* متن فرعی */
+
 }
 
 
-.background-image{
-    background-image: url("../public/img/banner-music.png");
+.background-image {
+    background-image: url("../public/img/setien.png");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-@media (max-width:454px){
-    .background-image{
+@media (max-width:454px) {
+    .background-image {
         min-height: 100px;
         background-size: 100%;
+    }
+}
+
+
+.motaherak {
+    width: 800px;
+    height: 1500px;
+    position: absolute;
+    top: 750px;
+    z-index: -100;
+    filter: blur(1000px);
+    animation: changeBackground 10s infinite;
+    transition: background-color 1s ease-in-out;
+}
+
+@keyframes changeBackground {
+    0% {
+        background: linear-gradient(135deg, #5653a3, #784ad6);
+    }
+
+    25% {
+        background: linear-gradient(135deg, #3f3ac0, #e91aa7);
+    }
+
+    50% {
+        background: linear-gradient(135deg, #2a2f7f, #00d4ff);
+    }
+
+    75% {
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+    }
+
+    100% {
+        background: linear-gradient(135deg, #5653a3, #784ad6);
     }
 }
